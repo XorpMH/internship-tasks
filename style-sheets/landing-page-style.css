@@ -1,0 +1,190 @@
+/* Project: Landing Page task from Google Classroom */
+/* Name: Mehrin, Date: 04/23/2025 */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url("../images/camping.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.custom-navbar {
+  background-color: #2f2f2f !important;
+}
+
+.custom-navbar .navbar-item {
+  color: white;
+}
+
+.custom-navbar .navbar-item:hover {
+  background-color: transparent;
+  color: white;
+}
+
+.main-title {
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.button.is-light {
+  padding-left: 1.8rem;
+  padding-right: 1.8rem;
+  font-weight: 600;
+}
+
+.services-section {
+  background-color: #f1f1f1;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.services-subtitle {
+  margin-top: -0.5rem;
+  margin-bottom: 2.5rem;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  justify-content: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background-color: white;
+  padding: 2rem 1.5rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.service-card img {
+  width: 85px;
+  height: 85px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.service-card h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.service-card p {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.about-section,
+.contact-section {
+  background-color: #f1f1f1;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.section-subtitle {
+  font-size: 0.95rem;
+  color: #666;
+  margin-top: -0.5rem;
+  margin-bottom: 3rem;
+}
+
+.about-content {
+  max-width: 760px;
+  margin: 0 auto;
+  color: #333;
+}
+
+.about-content h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-top: 1.8rem;
+  margin-bottom: 0.6rem;
+}
+
+.about-content p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.about-content ul {
+  margin-top: 0.5rem;
+  padding-left: 1.5rem;
+}
+
+.about-content li {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.contact-info p {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.85rem;
+  font-size: 0.95rem;
+  border: 1px solid #ccc;
+  outline: none;
+  background-color: white;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form button {
+  width: fit-content;
+  padding: 0.75rem 1.4rem;
+  border: none;
+  background-color: #333;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #555;
+}
