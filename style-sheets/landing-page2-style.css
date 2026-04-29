@@ -1,6 +1,8 @@
 /* Project: Landing Page 2 task from Google Classroom */
 /* Name: Mehrin, Date: 04/29/2025 */
 
+/* HOME SECTION STYLING */
+
 html {
   scroll-behavior: smooth;
 }
@@ -72,6 +74,8 @@ body {
   color: white;
 }
 
+/* INTRO SECTION STYLING */
+
 .intro-section {
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -141,6 +145,8 @@ body {
   font-size: 0.9rem;
   color: #666;
 }
+
+/* SERVICES SECTION STYLING */
 
 .services-section {
   background-color: #f7f7f7;
@@ -359,6 +365,8 @@ body {
   }
 }
 
+/* CALL ME SECTION STYLING */
+
 .call-section {
   background-color: #153e52;
   padding-top: 5rem;
@@ -464,4 +472,55 @@ body {
   .call-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* PROJECTS SECTION STYLING */
+
+.projects-section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.projects-label {
+  color: #14bf98;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.projects-title {
+  font-size: 1.8rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 0.8rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.filter-buttons button {
+  border: none;
+  padding: 0.5rem 1.2rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: 3px;   /* small corner instead of pill */
+  background-color: #eaeaea;
+  color: #555;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Active button */
+.filter-buttons button.active {
+  background-color: #14bf98;
+  color: white;
+}
+
+/* Hover */
+.filter-buttons button:hover {
+  background-color: #14bf98;
+  color: white;
 }
