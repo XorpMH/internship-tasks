@@ -1,0 +1,467 @@
+/* Project: Landing Page 2 task from Google Classroom */
+/* Name: Mehrin, Date: 04/29/2025 */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+.home-hero {
+  background-image:
+    linear-gradient(rgba(0, 40, 40, 0.55), rgba(0, 40, 40, 0.55)),
+    url("../images/aria-home.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Temporary fallback if you do not have the image yet */
+.home-hero {
+  background-color: #23413f;
+}
+
+.custom-navbar {
+  background-color: transparent;
+  padding-top: 1.5rem;
+}
+
+.logo {
+  font-size: 1.7rem;
+}
+
+.navbar-item {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.navbar-item:hover {
+  background-color: transparent !important;
+  color: #14bf98 !important;
+}
+
+.active-link {
+  color: #14bf98 !important;
+}
+
+.main-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.hero-subtitle {
+  font-size: 1.05rem;
+  margin-bottom: 2rem;
+}
+
+.discover-button {
+  background-color: #14bf98;
+  color: white;
+  border: none;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.discover-button:hover {
+  background-color: #10a884;
+  color: white;
+}
+
+.intro-section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.intro-label {
+  color: #14bf98;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.intro-title {
+  font-size: 1.8rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.intro-description {
+  color: #555;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.intro-quote {
+  font-style: italic;
+  color: #777;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.intro-quote-name {
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.intro-image {
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* FEATURES */
+.intro-features {
+  margin-top: 3rem;
+}
+
+.feature-icon {
+  background-color: #14bf98;
+  color: white;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 1rem auto;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.intro-features h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.intro-features p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.services-section {
+  background-color: #f7f7f7;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.section-label {
+  color: #14bf98;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.services-title {
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.service-packages {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.8rem;
+  max-width: 780px;
+  margin: 0 auto 6rem auto;
+}
+
+.service-package-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.service-img {
+  height: 130px;
+}
+
+.placeholder-img {
+  background: linear-gradient(rgba(0, 60, 60, 0.25), rgba(0, 60, 60, 0.25)),
+    url("../images/aria-home.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.service-card-content {
+  padding: 1.5rem;
+}
+
+.service-card-content h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.service-card-content p,
+.service-card-content li {
+  font-size: 0.82rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+.service-card-content ul {
+  text-align: left;
+  margin: 1rem 0;
+  list-style: none;
+}
+
+.service-card-content li::before {
+  content: "■";
+  color: #14bf98;
+  font-size: 0.55rem;
+  margin-right: 0.5rem;
+}
+
+.price {
+  font-weight: 700;
+  color: #333 !important;
+}
+
+.price span {
+  color: #14bf98;
+}
+
+.service-package-card button {
+  background-color: #14bf98;
+  color: white;
+  border: none;
+  padding: 0.65rem 1.5rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  border-radius: 3px;
+}
+
+.service-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.service-large-image {
+  min-height: 390px;
+}
+
+.service-details {
+  padding: 4rem;
+}
+
+.service-details h2 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.detail-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.4rem;
+}
+
+.detail-item span {
+  width: 28px;
+  height: 28px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.active-detail span {
+  background-color: #14bf98;
+  border-color: #14bf98;
+  color: white;
+}
+
+.active-detail h3 {
+  color: #14bf98;
+}
+
+.detail-item h3 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.detail-item p {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 0.4rem;
+}
+
+.second-row {
+  border-top: 1px solid #ddd;
+}
+
+.progress-content {
+  padding: 4rem;
+}
+
+.tabs-text {
+  display: flex;
+  gap: 1.5rem;
+  font-weight: 700;
+  color: #bbb;
+  margin-bottom: 1.5rem;
+}
+
+.active-tab,
+.green-text {
+  color: #14bf98;
+}
+
+.progress-content h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.progress-content p {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.progress-group {
+  margin-top: 1rem;
+}
+
+.progress-group p {
+  color: #333;
+  margin-bottom: 0.4rem;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 18px;
+  background-color: #e6f7f3;
+}
+
+.progress-bar div {
+  height: 100%;
+  background-color: #14bf98;
+}
+
+@media screen and (max-width: 768px) {
+  .service-packages,
+  .service-row {
+    grid-template-columns: 1fr;
+  }
+
+  .service-details,
+  .progress-content {
+    padding: 2rem;
+  }
+}
+
+.call-section {
+  background-color: #153e52;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  color: white;
+}
+
+.call-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  max-width: 900px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.call-text h2 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+.call-text p {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: #d7e5ea;
+  margin-bottom: 1rem;
+}
+
+.call-text ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.call-text li {
+  font-size: 0.9rem;
+  color: #d7e5ea;
+  margin-bottom: 0.5rem;
+}
+
+.call-text li::before {
+  content: "■";
+  color: #14bf98;
+  font-size: 0.55rem;
+  margin-right: 0.5rem;
+}
+
+.call-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.call-form input,
+.call-form select {
+  width: 100%;
+  padding: 0.85rem;
+  border: none;
+  border-radius: 3px;
+  background-color: #2a5a70;
+  color: white;
+  outline: none;
+}
+
+.call-form input::placeholder {
+  color: white;
+}
+
+.call-form select {
+  color: white;
+}
+
+.checkbox-line {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  color: #d7e5ea;
+}
+
+.checkbox-line input {
+  width: auto;
+  margin-top: 0.2rem;
+}
+
+.call-form button {
+  background-color: #14bf98;
+  color: white;
+  border: none;
+  padding: 0.9rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.call-form button:hover {
+  background-color: #10a884;
+}
+
+@media screen and (max-width: 768px) {
+  .call-grid {
+    grid-template-columns: 1fr;
+  }
+}
